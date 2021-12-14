@@ -1,8 +1,8 @@
 # python-utils-list
 
-Python list 增强
+## Python list 增强
 
-## 1. 增加foreach()方法
+### 1. 增加foreach()方法
 
 ```python
 l = UtilsList()
@@ -18,7 +18,7 @@ l.foreach(print)
 3
 ```
 
-## 2. 增加map()方法
+### 2. 增加map()方法
 
 ```python
 l = UtilsList()
@@ -31,4 +31,16 @@ print(new_list)
 
 ```
 [1,4,9]
+```
+
+
+## Python dict 增强
+### 1. 增加foreach()方法
+```python
+new_dict = UtilDict(a=1, b=2)
+new_dict.foreach(lambda k, v: print(f"{k}:{v}"))
+```
+```python
+a:1
+b:2
 ```
