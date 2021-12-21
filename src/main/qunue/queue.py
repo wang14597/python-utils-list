@@ -33,6 +33,9 @@ class Queue(object):
         other_elements = getattr(other, "_Queue__elements", None)
         return self.__elements == other_elements
 
+    def is_empty(self):
+        return self.__len__() == 0
+
 
 if __name__ == '__main__':
     q = Queue(1, 2, 3)
